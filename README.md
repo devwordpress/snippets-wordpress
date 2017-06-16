@@ -10,13 +10,12 @@ Then, edit the file adding lines on the array "$post_types". Just like `"Plural 
 
 **e.g.:**
 
-`$post_types = array(
-
+```php
+$post_types = array(
   "Post Types"=> "Post Type",
-  
   "Lorems"=>"Lorem"
-  
-);`
+);
+```
 
 ## 2nd Step
 #### Add custom taxonomies
@@ -25,13 +24,12 @@ Edit the file adding lines on the array "$custom_taxonomies". As above, as below
 
 **e.g.:**
 
-`$custom_taxonomies = array(
-
-   "New Categories"=>"New Category",
-   
-   "Tests"=>"Test"
-   
-);`
+```php
+$custom_taxonomies = array(
+  "New Categories"=>"New Category",
+  "Tests"=>"Test"
+);
+```
 
 ## 3rd Step
 #### Get custom post types and taxomonies together
@@ -40,27 +38,19 @@ Edit the array "$assing_taxonomies".
 
 **e.g.:**
 
-` $assing_taxonomies = array(
-
+```php
+$assing_taxonomies = array(
    "post_type"=>array( // post type slug goes here
-   
      "custom_taxonomies", // taxonomy plural slug goes here
-     
      "special_taxonomies" // taxonomy plural slug goes here
-     
    ),
-   
-      "post_type_2"=>array( // post type slug goes here
-      
+   "post_type_2"=>array( // post type slug goes here
      "custom_taxonomies_2", // taxonomy plural slug goes here
-     
-     "special_taxonomies_2" // taxonomy plural slug goes here
-     
+     "special_taxonomies_2" // taxonomy plural slug goes here 
    ),
-   
    // and it goes on and on...
-   
- );`
+ );
+ ```
 
 
 ----------
